@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:623c6793-6115-4dca-8926-1f6caea7f0bb(beer.calculator.lang.sandbox)">
+<model ref="r:623c6793-6115-4dca-8926-1f6caea7f0bb(beer.calculator.lang.sandbox)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="06124aad-58e5-413d-a632-bcaef36bc1a5" name="beer.calculator.lang" version="0" />

@@ -10,6 +10,7 @@
     <import index="klho" ref="r:0d61212a-8bb4-49ea-bf9e-0b396b749d35(beer.calculator.lang.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -472,6 +473,7 @@
         </node>
       </node>
       <node concept="3EZMnI" id="7iYC6EwDJXh" role="3EZMnx">
+        <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
         <node concept="VPM3Z" id="7iYC6EwDJXj" role="3F10Kt" />
         <node concept="3F0ifn" id="7iYC6EwD19D" role="3EZMnx">
           <property role="3F0ifm" value="repeat" />
