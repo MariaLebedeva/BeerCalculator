@@ -121,7 +121,7 @@
     </node>
     <node concept="1TJgyi" id="15x$ZlOwzc0" role="1TKVEl">
       <property role="IQ2nx" value="1252444853816668928" />
-      <property role="TrG5h" value="showAmount" />
+      <property role="TrG5h" value="showRepeats" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
