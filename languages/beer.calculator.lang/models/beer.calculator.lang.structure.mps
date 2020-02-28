@@ -119,6 +119,11 @@
       <property role="TrG5h" value="count" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="15x$ZlOwzc0" role="1TKVEl">
+      <property role="IQ2nx" value="1252444853816668928" />
+      <property role="TrG5h" value="showAmount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 

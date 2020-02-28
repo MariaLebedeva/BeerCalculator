@@ -15,6 +15,7 @@
       <concept id="8412337533796660103" name="beer.calculator.lang.structure.Item" flags="ng" index="3k71fH">
         <property id="8412337533796660106" name="sum" index="3k71fw" />
         <property id="8412337533796712169" name="count" index="3k7tU3" />
+        <property id="1252444853816668928" name="showAmount" index="1_SU3P" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -31,6 +32,7 @@
       <property role="3k7tU3" value="2" />
       <property role="3k71fw" value="320" />
       <property role="TrG5h" value="Гримберген Блонд" />
+      <property role="1_SU3P" value="true" />
     </node>
     <node concept="3k71fH" id="7iYC6EwE69C" role="3k71fJ">
       <property role="3k7tU3" value="1" />
