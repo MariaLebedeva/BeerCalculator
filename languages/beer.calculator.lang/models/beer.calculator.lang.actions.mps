@@ -21,6 +21,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
@@ -82,14 +85,14 @@
         <node concept="3clFbS" id="7iYC6EwEdvC" role="2VODD2">
           <node concept="3clFbF" id="7iYC6EwEdvY" role="3cqZAp">
             <node concept="37vLTI" id="7iYC6EwEe_L" role="3clFbG">
-              <node concept="3cmrfG" id="7iYC6EwEeJ5" role="37vLTx">
-                <property role="3cmrfH" value="0" />
-              </node>
               <node concept="2OqwBi" id="7iYC6EwEdBY" role="37vLTJ">
                 <node concept="1r4Lsj" id="7iYC6EwEdvX" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7iYC6EwEdK$" role="2OqNvi">
                   <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
                 </node>
+              </node>
+              <node concept="Xl_RD" id="4NIg1PVXbhA" role="37vLTx">
+                <property role="Xl_RC" value="0.0" />
               </node>
             </node>
           </node>

@@ -132,7 +132,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -143,6 +143,9 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -275,15 +278,19 @@
           <property role="3F0ifm" value="%" />
           <node concept="pkWqt" id="CHN70bg1_z" role="pqm2j">
             <node concept="3clFbS" id="CHN70bg1_$" role="2VODD2">
-              <node concept="3clFbF" id="CHN70bg1Dw" role="3cqZAp">
-                <node concept="3eOSWO" id="CHN70bg3ei" role="3clFbG">
-                  <node concept="3cmrfG" id="CHN70bg3f6" role="3uHU7w">
-                    <property role="3cmrfH" value="0" />
+              <node concept="3clFbF" id="4NIg1PVWQdO" role="3cqZAp">
+                <node concept="3eOSWO" id="4NIg1PVWRFr" role="3clFbG">
+                  <node concept="3b6qkQ" id="4NIg1PVWS1D" role="3uHU7w">
+                    <property role="$nhwW" value="0.0" />
                   </node>
-                  <node concept="2OqwBi" id="CHN70bg1QY" role="3uHU7B">
-                    <node concept="pncrf" id="CHN70bg1Dv" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="CHN70bg25b" role="2OqNvi">
-                      <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
+                  <node concept="2YIFZM" id="4NIg1PVWQ__" role="3uHU7B">
+                    <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+                    <node concept="2OqwBi" id="4NIg1PVWR8L" role="37wK5m">
+                      <node concept="pncrf" id="4NIg1PVWQBM" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="4NIg1PVWRoy" role="2OqNvi">
+                        <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -317,7 +324,7 @@
                   <node concept="3cpWs8" id="7iYC6EwCXu0" role="3cqZAp">
                     <node concept="3cpWsn" id="7iYC6EwCXu3" role="3cpWs9">
                       <property role="TrG5h" value="totalSum" />
-                      <node concept="10Oyi0" id="7iYC6EwCXtY" role="1tU5fm" />
+                      <node concept="10P55v" id="4NIg1PVWUCP" role="1tU5fm" />
                       <node concept="3cmrfG" id="7iYC6EwCXv_" role="33vP2m">
                         <property role="3cmrfH" value="0" />
                       </node>
@@ -345,12 +352,16 @@
                                 <ref role="3TsBF5" to="klho:7iYC6EwCRVD" resolve="count" />
                               </node>
                             </node>
-                            <node concept="2OqwBi" id="7iYC6EwCYCA" role="3uHU7B">
-                              <node concept="2GrUjf" id="7iYC6EwCYcB" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="7iYC6EwCX8Z" resolve="item" />
-                              </node>
-                              <node concept="3TrcHB" id="7iYC6EwCYOS" role="2OqNvi">
-                                <ref role="3TsBF5" to="klho:7iYC6EwCFea" resolve="sum" />
+                            <node concept="2YIFZM" id="4NIg1PVWVg7" role="3uHU7B">
+                              <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+                              <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
+                              <node concept="2OqwBi" id="4NIg1PVWYgz" role="37wK5m">
+                                <node concept="2GrUjf" id="4NIg1PVWXWx" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="7iYC6EwCX8Z" resolve="item" />
+                                </node>
+                                <node concept="3TrcHB" id="4NIg1PVWYz_" role="2OqNvi">
+                                  <ref role="3TsBF5" to="klho:7iYC6EwCFea" resolve="sum" />
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -363,8 +374,8 @@
                   </node>
                   <node concept="3clFbF" id="7iYC6EwDjIE" role="3cqZAp">
                     <node concept="2YIFZM" id="7iYC6EwDjKe" role="3clFbG">
-                      <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-                      <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                      <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+                      <ref role="37wK5l" to="wyt6:~Double.toString(double)" resolve="toString" />
                       <node concept="FJ1c_" id="7iYC6EwEuOC" role="37wK5m">
                         <node concept="3cmrfG" id="7iYC6EwEveb" role="3uHU7w">
                           <property role="3cmrfH" value="100" />
@@ -375,14 +386,18 @@
                           </node>
                           <node concept="1eOMI4" id="7iYC6EwEm1G" role="3uHU7w">
                             <node concept="3cpWsd" id="7iYC6EwEnCR" role="1eOMHV">
-                              <node concept="2OqwBi" id="7iYC6EwEnU1" role="3uHU7w">
-                                <node concept="pncrf" id="7iYC6EwEnIU" role="2Oq$k0" />
-                                <node concept="3TrcHB" id="7iYC6EwEo6a" role="2OqNvi">
-                                  <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
-                                </node>
-                              </node>
                               <node concept="3cmrfG" id="7iYC6EwEm7B" role="3uHU7B">
                                 <property role="3cmrfH" value="100" />
+                              </node>
+                              <node concept="2YIFZM" id="4NIg1PVWSKJ" role="3uHU7w">
+                                <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
+                                <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
+                                <node concept="2OqwBi" id="4NIg1PVWSKK" role="37wK5m">
+                                  <node concept="pncrf" id="4NIg1PVWSKL" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="4NIg1PVWSKM" role="2OqNvi">
+                                    <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>

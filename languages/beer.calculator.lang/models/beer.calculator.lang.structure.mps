@@ -28,6 +28,12 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -76,7 +82,7 @@
     <node concept="1TJgyi" id="7iYC6EwEc7u" role="1TKVEl">
       <property role="IQ2nx" value="8412337533797056990" />
       <property role="TrG5h" value="discount" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4NIg1PVWNWd" resolve="MyFloatDataType" />
     </node>
     <node concept="1TJgyj" id="7iYC6EwCFe5" role="1TKVEi">
       <property role="IQ2ns" value="8412337533796660101" />
@@ -112,7 +118,7 @@
     <node concept="1TJgyi" id="7iYC6EwCFea" role="1TKVEl">
       <property role="IQ2nx" value="8412337533796660106" />
       <property role="TrG5h" value="sum" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4NIg1PVWNWd" resolve="MyFloatDataType" />
     </node>
     <node concept="1TJgyi" id="7iYC6EwCRVD" role="1TKVEl">
       <property role="IQ2nx" value="8412337533796712169" />
@@ -124,6 +130,11 @@
       <property role="TrG5h" value="showRepeats" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="4NIg1PVWNWd">
+    <property role="3F6X1D" value="5543438686717427469" />
+    <property role="TrG5h" value="MyFloatDataType" />
+    <property role="FLfZY" value="-?[0-9]+\\.[0-9]" />
   </node>
 </model>
 
