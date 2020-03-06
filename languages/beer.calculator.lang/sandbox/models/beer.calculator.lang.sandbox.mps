@@ -31,8 +31,8 @@
     <node concept="3k71fH" id="7iYC6EwCVzp" role="3k71fJ">
       <property role="3k7tU3" value="2" />
       <property role="TrG5h" value="Гримберген Блонд" />
-      <property role="1_SU3P" value="true" />
       <property role="3k71fw" value="270.4" />
+      <property role="1_SU3P" value="true" />
     </node>
     <node concept="3k71fH" id="7iYC6EwE69C" role="3k71fJ">
       <property role="3k7tU3" value="1" />
