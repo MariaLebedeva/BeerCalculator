@@ -90,7 +90,6 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -199,9 +198,6 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -285,8 +281,8 @@
         <node concept="3F0ifn" id="7iYC6EwEcIy" role="3EZMnx">
           <property role="3F0ifm" value=":" />
         </node>
-        <node concept="3F1sOY" id="4NIg1PVXvCY" role="3EZMnx">
-          <ref role="1NtTu8" to="klho:4NIg1PVXsQe" resolve="discount" />
+        <node concept="3F0A7n" id="4NIg1PW1gYI" role="3EZMnx">
+          <ref role="1NtTu8" to="klho:7iYC6EwEc7u" resolve="discount" />
         </node>
         <node concept="3F0ifn" id="CHN70bg1y$" role="3EZMnx">
           <property role="3F0ifm" value="%" />
@@ -300,15 +296,10 @@
                   <node concept="2YIFZM" id="4NIg1PVWQ__" role="3uHU7B">
                     <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
                     <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
-                    <node concept="2OqwBi" id="4NIg1PVXwkR" role="37wK5m">
-                      <node concept="2OqwBi" id="4NIg1PVWR8L" role="2Oq$k0">
-                        <node concept="pncrf" id="4NIg1PVWQBM" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="4NIg1PVXvTT" role="2OqNvi">
-                          <ref role="3Tt5mk" to="klho:4NIg1PVXsQe" resolve="discount" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="4NIg1PVXwI3" role="2OqNvi">
-                        <ref role="3TsBF5" to="klho:4NIg1PVXsQ8" resolve="value" />
+                    <node concept="2OqwBi" id="4NIg1PVWR8L" role="37wK5m">
+                      <node concept="pncrf" id="4NIg1PVWQBM" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="4NIg1PW1hfV" role="2OqNvi">
+                        <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
                       </node>
                     </node>
                   </node>
@@ -374,17 +365,12 @@
                             <node concept="2YIFZM" id="4NIg1PVWVg7" role="3uHU7B">
                               <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
                               <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
-                              <node concept="2OqwBi" id="4NIg1PVXxCc" role="37wK5m">
-                                <node concept="2OqwBi" id="4NIg1PVWYgz" role="2Oq$k0">
-                                  <node concept="2GrUjf" id="4NIg1PVWXWx" role="2Oq$k0">
-                                    <ref role="2Gs0qQ" node="7iYC6EwCX8Z" resolve="item" />
-                                  </node>
-                                  <node concept="3TrEf2" id="4NIg1PVXx0f" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="klho:4NIg1PVXsQa" resolve="sum" />
-                                  </node>
+                              <node concept="2OqwBi" id="4NIg1PVWYgz" role="37wK5m">
+                                <node concept="2GrUjf" id="4NIg1PVWXWx" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="7iYC6EwCX8Z" resolve="item" />
                                 </node>
-                                <node concept="3TrcHB" id="4NIg1PVXyJo" role="2OqNvi">
-                                  <ref role="3TsBF5" to="klho:4NIg1PVXsQ8" resolve="value" />
+                                <node concept="3TrcHB" id="4NIg1PW1icw" role="2OqNvi">
+                                  <ref role="3TsBF5" to="klho:7iYC6EwCFea" resolve="sum" />
                                 </node>
                               </node>
                             </node>
@@ -416,15 +402,10 @@
                               <node concept="2YIFZM" id="4NIg1PVWSKJ" role="3uHU7w">
                                 <ref role="1Pybhc" to="wyt6:~Double" resolve="Double" />
                                 <ref role="37wK5l" to="wyt6:~Double.valueOf(java.lang.String)" resolve="valueOf" />
-                                <node concept="2OqwBi" id="4NIg1PVX$oL" role="37wK5m">
-                                  <node concept="2OqwBi" id="4NIg1PVWSKK" role="2Oq$k0">
-                                    <node concept="pncrf" id="4NIg1PVWSKL" role="2Oq$k0" />
-                                    <node concept="3TrEf2" id="4NIg1PVXzHs" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="klho:4NIg1PVXsQe" resolve="discount" />
-                                    </node>
-                                  </node>
-                                  <node concept="3TrcHB" id="4NIg1PVX$yr" role="2OqNvi">
-                                    <ref role="3TsBF5" to="klho:4NIg1PVXsQ8" resolve="value" />
+                                <node concept="2OqwBi" id="4NIg1PVWSKK" role="37wK5m">
+                                  <node concept="pncrf" id="4NIg1PVWSKL" role="2Oq$k0" />
+                                  <node concept="3TrcHB" id="4NIg1PW1kG6" role="2OqNvi">
+                                    <ref role="3TsBF5" to="klho:7iYC6EwEc7u" resolve="discount" />
                                   </node>
                                 </node>
                               </node>
@@ -502,8 +483,8 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="4NIg1PVXBjY" role="3EZMnx">
-        <ref role="1NtTu8" to="klho:4NIg1PVXsQa" resolve="sum" />
+      <node concept="3F0A7n" id="4NIg1PW1eKA" role="3EZMnx">
+        <ref role="1NtTu8" to="klho:7iYC6EwCFea" resolve="sum" />
       </node>
       <node concept="3F0ifn" id="7iYC6EwD19H" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -777,15 +758,6 @@
           <property role="CtIbK" value="30NnNOohrQL/RIGHT" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="4NIg1PVYDO6">
-    <ref role="1XX52x" to="klho:4NIg1PVXsQ7" resolve="MyFloat" />
-    <node concept="3EZMnI" id="4NIg1PVYDOb" role="2wV5jI">
-      <node concept="3F0A7n" id="4NIg1PVYDOl" role="3EZMnx">
-        <ref role="1NtTu8" to="klho:4NIg1PVXsQ8" resolve="value" />
-      </node>
-      <node concept="l2Vlx" id="4NIg1PVYDOe" role="2iSdaV" />
     </node>
   </node>
 </model>
