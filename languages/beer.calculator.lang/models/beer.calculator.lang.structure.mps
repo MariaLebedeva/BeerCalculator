@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -79,10 +80,11 @@
       <property role="TrG5h" value="date" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="7iYC6EwEc7u" role="1TKVEl">
-      <property role="IQ2nx" value="8412337533797056990" />
-      <property role="TrG5h" value="discount" />
-      <ref role="AX2Wp" node="4NIg1PVWNWd" resolve="MyFloatDataType" />
+    <node concept="1TJgyj" id="4NIg1PVXsQe" role="1TKVEi">
+      <property role="IQ2ns" value="5543438686717595022" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="discount" />
+      <ref role="20lvS9" node="4NIg1PVXsQ7" resolve="MyFloat" />
     </node>
     <node concept="1TJgyj" id="7iYC6EwCFe5" role="1TKVEi">
       <property role="IQ2ns" value="8412337533796660101" />
@@ -115,11 +117,6 @@
     <node concept="PrWs8" id="7iYC6EwCFe8" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="7iYC6EwCFea" role="1TKVEl">
-      <property role="IQ2nx" value="8412337533796660106" />
-      <property role="TrG5h" value="sum" />
-      <ref role="AX2Wp" node="4NIg1PVWNWd" resolve="MyFloatDataType" />
-    </node>
     <node concept="1TJgyi" id="7iYC6EwCRVD" role="1TKVEl">
       <property role="IQ2nx" value="8412337533796712169" />
       <property role="TrG5h" value="count" />
@@ -130,11 +127,28 @@
       <property role="TrG5h" value="showRepeats" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyj" id="4NIg1PVXsQa" role="1TKVEi">
+      <property role="IQ2ns" value="5543438686717595018" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sum" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4NIg1PVXsQ7" resolve="MyFloat" />
+    </node>
   </node>
   <node concept="Az7Fb" id="4NIg1PVWNWd">
     <property role="3F6X1D" value="5543438686717427469" />
     <property role="TrG5h" value="MyFloatDataType" />
     <property role="FLfZY" value="-?[0-9]*\\.?[0-9]" />
+  </node>
+  <node concept="1TIwiD" id="4NIg1PVXsQ7">
+    <property role="EcuMT" value="5543438686717595015" />
+    <property role="TrG5h" value="MyFloat" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyi" id="4NIg1PVXsQ8" role="1TKVEl">
+      <property role="IQ2nx" value="5543438686717595016" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="4NIg1PVWNWd" resolve="MyFloatDataType" />
+    </node>
   </node>
 </model>
 
