@@ -134,7 +134,7 @@
   <node concept="Az7Fb" id="4NIg1PVWNWd">
     <property role="3F6X1D" value="5543438686717427469" />
     <property role="TrG5h" value="MyFloatDataType" />
-    <property role="FLfZY" value="-?[0-9]+\\.?[0-9]" />
+    <property role="FLfZY" value="-?[0-9]*\\.?[0-9]" />
   </node>
 </model>
 
